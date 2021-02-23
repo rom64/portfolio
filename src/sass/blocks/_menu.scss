@@ -1,3 +1,15 @@
+.localisation{
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  font-size: 24px;
+  &__item{
+    color: #212529;
+    &-active{
+      font-weight: bold;
+    }
+  }
+}
 .hamburger{
   position: absolute;
   top: 20px;
