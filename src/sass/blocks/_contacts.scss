@@ -25,9 +25,11 @@
   }
   &__h,&__social{
     margin-top: 20px;
+    display: flex;
   }
   &__link{
     margin-right: 25px;
+    color: black;
     img{
       max-width: 30px;
       max-height: 30px;

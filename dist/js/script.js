@@ -21,12 +21,8 @@ let timerId ;
         });
     });
 
-const localisation = document.querySelector('.localisation'),
-    item= document.querySelector('.localisation__item');
-    localisation.addEventListener('click', ()=>{
-        item.classList.toggle('active');
-    });
 
+//mail
 $(function(){
     $('form').submit(function(e){
         e.preventDefault();
@@ -41,6 +37,8 @@ $(function(){
         });
         return  false;
     });
+
+//totop
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1000) {
             $('.totop').fadeIn();

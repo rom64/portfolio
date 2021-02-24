@@ -89,9 +89,21 @@
     padding-top: 80px;
   }
 }
+@media (max-width: 812px) {
+  .menu{
+    &__list{
+      margin-top: -40px;
+    }
+    &__social{
+      display: none;
+    }
+  }
+
+}
 @media (max-width: 768px){
   .container{
     max-width: 540px;
+    margin-top: 300px;
   }
   .title{
     &__fs48{
@@ -138,6 +150,9 @@
     }
   }
 }
+@media (max-width: 737px){
+
+}
 @media (max-width: 576px){
   .container{
     width: 100% ;
@@ -157,16 +172,19 @@
   .menu{
     &__block{
       width: 250px;
-      //padding-left: 20px;
+      //padding-top: 50px;
     }
   }
   .promo{
     background: url("../img/main_bgg.jpg") no-repeat 58%/cover;
+    min-height: 60vh;
+    padding-top: 0;
     &__btns{
       margin-top: 30px;
     }
   }
   .about{
+    padding-top: 0;
     &__wrapper{
       grid-template: 340px auto auto /1fr ;
     }
@@ -175,22 +193,28 @@
     }
   }
   .education{
-    padding-top: 80px;
+    padding-top: 0px;
     &__wrapper{
       width: 90%;
     }
   }
   .skills{
-    padding-top: 80px;
+    padding-top: 0px;
     &__items{
       grid-template-columns: 270px;
       margin-top: 40px;
     }
   }
   .contacts{
-    padding-top: 40px;
+    padding-top: 80px;
     &__wrapper{
       padding: 0;
+    }
+    &__social{
+      display: block;
+    }
+    &__link{
+      margin: 10px;
     }
     &__form{
       display: block;
@@ -214,5 +238,15 @@
       margin-top: 20px;
       display: block;
     }
+  }
+}
+@media(max-width: 420px){
+  .totop{
+    img{
+      display: none;
+    }
+  }
+  .menu__social{
+    bottom: 10px;
   }
 }
