@@ -51,6 +51,7 @@
 @media (max-width: 992px) {
   .container{
     max-width: 720px;
+    padding: 10px;
   }
   .title{
     &__fs36{
@@ -103,7 +104,8 @@
 @media (max-width: 768px){
   .container{
     max-width: 540px;
-    margin-top: 300px;
+    margin-top: 0;
+    padding-bottom: 80px;
   }
   .title{
     &__fs48{
@@ -133,7 +135,10 @@
     }
   }
   .education{
-    padding-top: 80px;
+    .container{
+      padding-bottom: 0;
+    }
+
     &__wrapper{
       width: 520px;
       padding-top: 40px;
@@ -144,14 +149,14 @@
       row-gap: 10px;
     }
   }
+  .portfolio{
+    padding-top: 20px;
+  }
   .contacts{
     &__form{
       grid-template-columns: repeat(2,250px);
     }
   }
-}
-@media (max-width: 737px){
-
 }
 @media (max-width: 576px){
   .container{
@@ -178,7 +183,7 @@
   .promo{
     background: url("../img/main_bgg.jpg") no-repeat 58%/cover;
     min-height: 60vh;
-    padding-top: 0;
+    padding-top: -1px;
     &__btns{
       margin-top: 30px;
     }
@@ -248,5 +253,11 @@
   }
   .menu__social{
     bottom: 10px;
+  }
+  .container{
+    padding: 10px;
+  }
+  .about,.education, .skills, .portfolio{
+    padding-top: 50px;
   }
 }
